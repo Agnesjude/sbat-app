@@ -4,7 +4,7 @@ import BreadcrumbsNavbar from "../breadcrumbsnav/BreadcrumbsNav";
 import "./table.css";
 import GlobalFilter from "./GlobalFilter";
 import ExportColumn from './ExcelExcel';
-import { CSVLink } from "react-csv";
+// import { CSVLink } from "react-csv";
 
 export const FilteringTable = ({ columns, data }: { columns: any; data: any; }) => {
 
@@ -102,7 +102,6 @@ export const FilteringTable = ({ columns, data }: { columns: any; data: any; }) 
           <option value="mercedes">Update</option>
         </select>
        <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
-        <CSVLink {...csvReport} className="csv-export">Export to Excel</CSVLink>
         
       </div>
       <table {...getTableProps()} className="nav-filter-table" ref={tableRef}>

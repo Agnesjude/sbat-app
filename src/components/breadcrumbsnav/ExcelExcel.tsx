@@ -1,9 +1,9 @@
 import  React, {useState} from "react";
 import * as ReactDOM from "react-dom";
-import {
-  ExcelExport,
-  ExcelExportColumn,
-} from "@progress/kendo-react-excel-export";
+// import {
+//   ExcelExport,
+//   ExcelExportColumn,
+// } from "@progress/kendo-react-excel-export";
 import tabledata from './tabledata.json';
 
 //const data = products;
@@ -12,23 +12,23 @@ import tabledata from './tabledata.json';
 
 const ExportColumn = (data:any) => {
 
-  const _exporter = React.createRef<ExcelExport>();
-  const excelExport = () => {
-    if (_exporter.current) {
-      _exporter.current.save();
-    }
-  };
+  // const _exporter = React.createRef<ExcelExport>();
+  // const excelExport = () => {
+  //   if (_exporter.current) {
+  //     _exporter.current.save();
+  //   }
+  // };
 
   return (
     <div>
       <button
         className="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"
-        onClick={excelExport}
+        // onClick={excelExport}
       >
      Excel spec column
       </button>
 
-      <ExcelExport
+      {/* <ExcelExport
         data={data.data}
         fileName="AssetJournal.xlsx"
         ref={_exporter}
@@ -39,7 +39,7 @@ const ExportColumn = (data:any) => {
         <ExcelExportColumn field="csuRP" title="csuRP" />
         <ExcelExportColumn field="caseStatus" title="caseStatus" />
         <ExcelExportColumn field="openDate" title="openDate" />
-      </ExcelExport>
+      </ExcelExport> */}
 
     </div>
   );

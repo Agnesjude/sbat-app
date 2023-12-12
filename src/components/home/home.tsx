@@ -7,7 +7,7 @@ export const Home = () => {
         <div>
             <div className="sbat-home-page">
                 <Link className="sbat-home-tile" to={{ pathname: '/' }}>
-                    Asset Journal Supervision Tool
+                    Asset Journal Supervision Tool 
                 </Link>
                 <Link className="sbat-home-tile" to={{ pathname: '/product-monitoring' }}>
                     Product Monitoring Tool

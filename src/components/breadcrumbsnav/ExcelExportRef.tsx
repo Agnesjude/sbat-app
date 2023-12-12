@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { DownloadTableExcel } from 'react-export-table-to-excel';
+// import { DownloadTableExcel } from 'react-export-table-to-excel';
 
 //import ReactHTMLTableToExcel from "react-html-table-to-excel";
 
@@ -32,7 +32,7 @@ const Test = () => {
     // };
     return (
         <div>
-            <DownloadTableExcel
+            {/* <DownloadTableExcel
                 filename="users table"
                 sheet="users"
                 currentTableRef={tableRef.current}
@@ -40,7 +40,7 @@ const Test = () => {
 
                 <button> Export excel </button>
 
-            </DownloadTableExcel>
+            </DownloadTableExcel> */}
 
             <table  >
                 <tbody>
